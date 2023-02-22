@@ -37,4 +37,10 @@ class ButtonStyle: UIButton {
         }
     }
     
+    @IBInspectable var bordeRColor: UIColor = UIColor.clear {
+        didSet {
+            self.layer.borderColor = bordeRColor.cgColor
+        }
+    }
+    
 }
